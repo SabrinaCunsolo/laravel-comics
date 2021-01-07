@@ -411,30 +411,77 @@ a {
   text-decoration: none;
 }
 
-.header-top {
-  background-color: #0082F9;
+.jumbo {
+  background-image: url("/images/jumbotron.jpg");
+  padding: 200px 0;
 }
 
-.header-top ul {
+header ul {
   margin: 0;
-  padding: 0;
   list-style-type: none;
-  float: right;
+  padding: 0;
 }
 
-.header-top ul li {
+header ul li {
   display: inline-block;
 }
 
-.header-top ul li:last-child {
+header .header-top {
+  background-color: #0082F9;
+}
+
+header .header-top ul {
+  float: right;
+}
+
+header .header-top ul li:last-child {
   margin-left: 50px;
 }
 
-.header-top ul li a {
+header .header-top ul li a {
   display: inline-block;
   color: white;
   padding: 5px;
   font-size: 11px;
   font-weight: 600;
+}
+
+header .header-bottom {
+  background-color: white;
+}
+
+header .header-bottom .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-bottom .nav-menu .logo {
+  height: 81px;
+}
+
+header .header-bottom .nav-menu .logo a {
+  display: inline-block;
+  height: 100%;
+}
+
+header .header-bottom .nav-menu .logo a img {
+  height: 100%;
+}
+
+header .header-bottom .nav-menu li {
+  padding: 0 15px;
+}
+
+header .header-bottom .nav-menu li a {
+  display: inline-block;
+  line-height: 115px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #464646;
+}
+
+header .header-bottom .nav-menu li a:hover {
+  color: #0082F9;
+  border-bottom: 5px solid #0082F9;
 }
 

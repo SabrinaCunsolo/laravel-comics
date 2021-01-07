@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        {{-- favicon --}}
+        <link rel="icon" href="{{ asset('images/favicon.ico') }}">
+
         <title>@yield('page-title', 'Laravel Comics')</title>
 
         <!-- Fonts -->
