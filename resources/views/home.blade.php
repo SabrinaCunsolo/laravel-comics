@@ -6,16 +6,26 @@
     @include('partials.jumbo')
     <section id="series">
         <div class="container">
-            @foreach ($series as $item)
-                <div class="comic">
-                    <div class="comic-image">
-                        <img src=" {{ $item['thumb'] }} " alt=" {{ $item['series'] }} ">
+            <div class="current-series">
+                <h2 class="uppercase">Current Series</h2>
+            </div>
+            <div class="comic-container">
+                @foreach ($series as $item)
+                    <div class="comic">
+                        <div class="comic-image">
+                            <img src=" {{ $item['thumb'] }} " alt=" {{ $item['series'] }} ">
+                        </div>
+                        <div class="comic-name">
+                            <span class="uppercase"> {{ $item['series'] }} </span>
+                        </div>
                     </div>
-                    <div class="comic-name">
-                        {{ $item['series'] }}
-                    </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
+            <div class="load-button">
+                <h3 class="uppercase">
+                    <a href="#">Load More</a>
+                </h3>
+            </div>
         </div>
     </section>
 @endsection

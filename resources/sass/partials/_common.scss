@@ -29,3 +29,31 @@ a {
     background-image: url('/images/jumbotron.jpg');
     padding: 200px 0;
 }
+
+.current-series h2 {
+    background-color: $primary_color;
+    margin: 0;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.load-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+        h3 {
+            background-color: $primary_color;
+            margin: 0;
+            padding: 10px 60px;
+            display: inline-block;
+            font-size: 15px;
+
+            a {
+                color: $primary_text_color;
+            }
+    }
+}
