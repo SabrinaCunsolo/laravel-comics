@@ -485,3 +485,8 @@ header .header-bottom .nav-menu li a:hover {
   border-bottom: 5px solid #0082F9;
 }
 
+#series {
+  background-color: #1C1C1C;
+  color: white;
+}
+

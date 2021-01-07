@@ -4,5 +4,18 @@
 
 @section('content')
     @include('partials.jumbo')
-<h1>homepage</h1>
+    <section id="series">
+        <div class="container">
+            @foreach ($series as $item)
+                <div class="comic">
+                    <div class="comic-image">
+                        <img src=" {{ $item['thumb'] }} " alt=" {{ $item['series'] }} ">
+                    </div>
+                    <div class="comic-name">
+                        {{ $item['series'] }}
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </section>
 @endsection
