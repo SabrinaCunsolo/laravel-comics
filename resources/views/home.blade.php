@@ -10,15 +10,17 @@
                 <h2 class="uppercase">Current Series</h2>
             </div>
             <div class="comic-container">
-                @foreach ($series as $item)
-                    <div class="comic">
-                        <div class="comic-image">
-                            <img src=" {{ $item['thumb'] }} " alt=" {{ $item['series'] }} ">
+                @foreach ($series as $index =>$item)
+                    <a href="{{ route('dettagli-fumetto', ['id' => $index]) }}">
+                        <div class="comic">
+                            <div class="comic-image">
+                                <img src=" {{ $item['thumb'] }} " alt=" {{ $item['series'] }} ">
+                            </div>
+                            <div class="comic-name">
+                                <span class="uppercase"> {{ $item['series'] }} </span>
+                            </div>
                         </div>
-                        <div class="comic-name">
-                            <span class="uppercase"> {{ $item['series'] }} </span>
-                        </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="load-button">

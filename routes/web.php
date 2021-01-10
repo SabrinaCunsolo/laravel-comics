@@ -21,6 +21,15 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('homepage');
 
-Route::get('/contact-us', function () {
-    return view('contact');
-});
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics');
+
+    if (array_key_exists($id, $comics)) {
+        $fumetto = $comics[$id];
+        $data = [
+            'comic' => $fumetto
+        ];
+        return view('card-fumetto', $data);
+    }
+    abort(404);
+})->name('dettagli-fumetto');

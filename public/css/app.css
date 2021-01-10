@@ -555,6 +555,10 @@ footer .footer-top .footer-list .menu-list .menu h4 {
   font-size: 22px;
 }
 
+footer .footer-top .footer-list .menu-list .menu ul {
+  padding: 0;
+}
+
 footer .footer-top .footer-list .menu-list .menu a {
   color: #959595;
   font-size: 13px;
@@ -607,5 +611,6 @@ footer .footer-top .footer-list .cookies-settings a {
 #series .comic-container .comic .comic-name {
   padding-top: 20px;
   font-size: 14px;
+  color: white;
 }
 
