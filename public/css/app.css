@@ -532,50 +532,83 @@ footer .footer-top .footer-top-container {
   background-position: right;
 }
 
-footer .footer-top .footer-list {
+footer .footer-top .footer-top-container .footer-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-footer .footer-top .footer-list .menu-list {
+footer .footer-top .footer-top-container .footer-list .menu-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-footer .footer-top .footer-list .menu-list .menu {
+footer .footer-top .footer-top-container .footer-list .menu-list .menu {
   margin-right: 20px;
   margin-top: 20px;
 }
 
-footer .footer-top .footer-list .menu-list .menu h4 {
+footer .footer-top .footer-top-container .footer-list .menu-list .menu h4 {
   color: white;
   text-transform: uppercase;
   font-size: 22px;
 }
 
-footer .footer-top .footer-list .menu-list .menu ul {
+footer .footer-top .footer-top-container .footer-list .menu-list .menu ul {
   padding: 0;
 }
 
-footer .footer-top .footer-list .menu-list .menu a {
+footer .footer-top .footer-top-container .footer-list .menu-list .menu a {
   color: #959595;
   font-size: 13px;
 }
 
-footer .footer-top .footer-list .menu-list .menu a:hover {
+footer .footer-top .footer-top-container .footer-list .menu-list .menu a:hover {
   color: #0082F9;
 }
 
-footer .footer-top .footer-list .cookies-settings {
+footer .footer-top .footer-top-container .footer-list .cookies-settings {
   color: #959595;
   font-size: 13px;
   margin-top: 20px;
 }
 
-footer .footer-top .footer-list .cookies-settings a {
+footer .footer-top .footer-top-container .footer-list .cookies-settings a {
   color: #0082F9;
+}
+
+footer .footer-bottom {
+  background-color: #303030;
+  padding: 30px;
+}
+
+footer .footer-bottom .footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-bottom .footer-bottom-container .signup-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .footer-bottom .footer-bottom-container .signup-button h3 {
+  border: 3px solid #0082F9;
+  margin: 0;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+footer .footer-bottom .footer-bottom-container .signup-button h3 a {
+  color: white;
+}
+
+footer .footer-bottom .footer-bottom-container .follow-us h3 {
+  color: #0082F9;
+  font-size: 18px;
 }
 
 #series {

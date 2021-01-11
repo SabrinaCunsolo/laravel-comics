@@ -11,54 +11,90 @@ footer {
             background-image: url(/images/dc-logo-bg.png);
             background-repeat: no-repeat;
             background-position: right;
-        }
 
-        .footer-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
 
-            .menu-list {
+            .footer-list {
                 display: flex;
+                flex-direction: column;
                 justify-content: flex-start;
-                align-items: flex-start;
 
-                .menu {
-                    margin-right: 20px;
-                    margin-top: 20px;
+                .menu-list {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
 
-                    h4{
-                        color: $primary_text_color;
-                        text-transform: uppercase;
-                        font-size: 22px;
-                    }
+                    .menu {
+                        margin-right: 20px;
+                        margin-top: 20px;
 
-                    ul {
-                        padding: 0;
+                        h4{
+                            color: $primary_text_color;
+                            text-transform: uppercase;
+                            font-size: 22px;
+                        }
 
-                    }
+                        ul {
+                            padding: 0;
 
-                    a{
-                        color: #959595;
-                        font-size: 13px;
+                        }
 
-                        &:hover{
-                            color: $primary_color;
+                        a{
+                            color: #959595;
+                            font-size: 13px;
+
+                            &:hover{
+                                color: $primary_color;
+                            }
                         }
                     }
                 }
-            }
 
-            .cookies-settings {
-                color: #959595;
-                font-size: 13px;
-                margin-top: 20px;
+                .cookies-settings {
+                    color: #959595;
+                    font-size: 13px;
+                    margin-top: 20px;
 
-                a{
-                    color: $primary_color;
+                    a{
+                        color: $primary_color;
+                    }
                 }
             }
         }
     }
 
+    .footer-bottom {
+        background-color: $bg_footer_bottom;
+        padding: 30px;
+
+        .footer-bottom-container {
+            display: flex;
+            justify-content: space-between;
+
+            .signup-button {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                    h3 {
+                        border: 3px solid $primary_color;
+                        margin: 0;
+                        padding: 10px 30px;
+                        display: inline-block;
+                        font-size: 15px;
+
+                        a {
+                            color: $primary_text_color;
+                        }
+                    }
+                }
+
+            .follow-us {
+
+                h3 {
+                    color: $primary_color;
+                    font-size: 18px
+                }
+            }
+        }
+    }
 }

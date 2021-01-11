@@ -172,6 +172,17 @@
         </div>
     </div>
     <div class="footer-bottom">
-
+        <div class="container">
+            <div class="footer-bottom-container">
+                <div class="signup-button">
+                    <h3 class="uppercase">
+                        <a href="#">Sign-up Now!</a>
+                    </h3>
+                </div>
+                <div class="follow-us">
+                    <h3 class="uppercase">Follow Us</h3>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
